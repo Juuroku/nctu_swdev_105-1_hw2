@@ -6,59 +6,81 @@
 		<link rel="icon" type="images/x-icon" href="favicon.ico">
 	</head>
 	<header>
-		<p>caculator</p>
+		<h2>caculator</h2>
 	</header>
 	<body>
-		<p id="answer">0</p>
+	<div class="cal">
+		<div id="answer">0</div>
 		<ul>
-			<li><span>HEX</span> <span>0</span></li>
-			<li><span>DEC</span> <span>0</span></li>
-			<li><span>OCT</span> <span>0</span></li>
-			<li><span>BIN</span> <span>0</span></li>
+			<li>
+				<p>
+					<span class="base">HEX</span>
+					<span id="hex" class="convert">0</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="base">DEC</span>
+					<span id="dec" class="convert">0</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="base">OCT</span>
+					<span id="oct" class="convert">0</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="base">BIN</span>
+					<span id="bin" class="convert">0</span>
+				</p>
+			</li>
 		</ul>
 		<table>
 			<tbody>
 				<tr>
 					<th><button></button></th>
-					<th><button>Mod</button></th>
-					<th><button>CE</button></th>
-					<th><button>C</button></th>
-					<th><button>←</button></th>
-					<th><button>%</button></th>
+					<th><button class="op">Mod</button></th>
+					<th><button class="ce">CE</button></th>
+					<th><button class="c">C</button></th>
+					<th><button class="bs">←</button></th>
+					<th><button class="op">%</button></th>
 				</tr>
 				<tr>
-					<th><button>A</button></th>
-					<th><button>B</button></th>
-					<th><button>7</button></th>
-					<th><button>8</button></th>
-					<th><button>9</button></th>
-					<th><button>x</button></th>
+					<th><button class="num">A</button></th>
+					<th><button class="num">B</button></th>
+					<th><button class="num">7</button></th>
+					<th><button class="num">8</button></th>
+					<th><button class="num">9</button></th>
+					<th><button class="op">x</button></th>
 				</tr>
 				<tr>
-					<th><button>C</button></th>
-					<th><button>D</button></th>
-					<th><button>4</button></th>
-					<th><button>5</button></th>
-					<th><button>6</button></th>
-					<th><button>-</button></th>
+					<th><button class="num">C</button></th>
+					<th><button class="num">D</button></th>
+					<th><button class="num">4</button></th>
+					<th><button class="num">5</button></th>
+					<th><button class="num">6</button></th>
+					<th><button class="op">-</button></th>
 				</tr>
-					<th><button>E</button></th>
-					<th><button>F</button></th>
-					<th><button>1</button></th>
-					<th><button>2</button></th>
-					<th><button>3</button></th>
-					<th><button>+</button></th>
+					<th><button class="num">E</button></th>
+					<th><button class="num">F</button></th>
+					<th><button class="num">1</button></th>
+					<th><button class="num">2</button></th>
+					<th><button class="num">3</button></th>
+					<th><button class="op">+</button></th>
 				<tr>
 				</tr>
 				<tr>
 					<th><button></button></th>
 					<th><button></button></th>
+					<th><button class="neg">±</button></th>
+					<th><button class="num">0</button></th>
 					<th><button></button></th>
-					<th><button>0</button></th>
-					<th><button></button></th>
-					<th><button>=</button></th>
+					<th><button class="eval">=</button></th>
 				</tr>
 			</tbody>
 		</table>
+	</div>
 	</body>
 </html>
