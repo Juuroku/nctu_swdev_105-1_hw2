@@ -119,9 +119,6 @@ var currentNum = {
 	}
 }
 
-var baseConv = {
-}
-
 function convert(val, base)
 {
 	if(base == 10)
