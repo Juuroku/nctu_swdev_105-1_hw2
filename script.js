@@ -45,7 +45,7 @@ var currentNum = {
 	
 	illegal()
 	{
-		return this.num == "NaN" || this.num == "OverFlow";
+		return this.num == "NaN";
 	},
 	
 	clr()
@@ -98,8 +98,6 @@ var currentNum = {
 	setVal(value)
 	{
 		this.num = convert(value, this.base);
-		if(this.outOfRan())
-			this.num = "OverFlow";
 	},
 	
 	getVal()
@@ -111,17 +109,16 @@ var currentNum = {
 	{
 		return this.num;
 	},
-	
-	outOfRan()
-	{
-		var val = this.getVal();
-		return (val >= Math.pow(2,15) || val < -Math.pow(2,15));
-	}
 }
 
 function convert(val, base)
 {
-	if(base == 10)
+	if(isNaN(val))
+	{
+		console.log(val);
+		return val;
+	}
+	else if(base == 10 || val == NaN)
 		return val;
 	else
 		return (val>>>0).toString(base).toUpperCase();
