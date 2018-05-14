@@ -27,3 +27,11 @@ button{
 	border-radius: 5px;
 	margin: 5px;
 }
+
+.base:hover{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	border-color: gray;
+	background-color: lightgray;
+}

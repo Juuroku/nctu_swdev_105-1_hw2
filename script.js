@@ -27,8 +27,28 @@ function baseInit()
 {
 	var baseList = document.getElementsByTagName("li");
 	for(i = 0;i < baseList.length;i++)
+	{
+		//baseList[i].addEventListener("mouseover", mouseon);
 		baseList[i].addEventListener("click",changeScreenBase);
+		//baseList[i].addEventListener("mouseout", mouseout);
+	}
 }
+
+/*function mouseon(event)
+{
+	id = event.currentTarget.firstElementChild.lastElementChild.id;
+	id = id.toUpperCase();
+	document.getElementById(id).style.color="blue";
+	//console.log(id);
+}
+
+function mouseout(event)
+{
+	id = event.currentTarget.firstElementChild.lastElementChild.id;
+	id = id.toUpperCase();
+	document.getElementById(id).style.color="black";
+	//console.log(id);
+}*/
 
 function changeScreenBase(event)
 {
